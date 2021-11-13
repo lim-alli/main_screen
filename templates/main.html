@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게임페이지</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../main.js"></script>
+
+    <main class ="main">
+     <section class="home container" id="home">
+                <div class="swiper home-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- HOME SLIDER 1 -->
+                        <section class="swiper-slide">
+                            <div class="home__content grid">
+                                <div class="home__group">
+                                    <img src="../home1-img.png" alt="" class="home__img">
+    
+                                <div class="home__data">
+                                    <h3 class="home__subtitle">추억의 게임 속으로</h3>
+                                    <h1 class="home__title">에그투 꼬꼬 <br>투게더 : 바닐라 맛</h1>
+                                    <p class="home__description">제작 : 박서린, 김나연, 홍리경, 이상지, 임은비
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- HOME SLIDER 2 -->
+                        <section class="swiper-slide">
+                            <div class="home__content grid">
+                                <div class="game__group">
+    
+                                <div class="game__data">
+                                    <h3 class="home__subtitle">List</h3>
+                                    <div class="game-contents-wrapper">
+                                        <div class="game-title-wrapper">
+                                        </div>
+                                        <div class="game-image-wrapper">
+                                            <div class="game-image-box bg-purple">
+                                                <h4 class="game__title">치매 예방<br>기억력 테스트</h4>
+                                                <p>포토 / 오디오 / 비디오 / 글 & 홈 창작 < 생산 - 클라우드 - 소비 > 전체 사이클의 기술을 연구 개발하는 플랫폼 그룹입니다.</p>
+                                                <p>포토 / 오디오 / 비디오 / 글 & 홈 창작 < 생산 - 클라우드 - 소비 > 전체 사이클의 기술을 연구 </p>
+                                                <img class="game-image" src="../memory.png" alt=""/>
+
+                                            </div>
+                                            <div class="game-image-box bg-pumpkin">
+                                                <h4 class="game__title">재빵왕<br>김탁구의 길</h4>
+                                                <p>포토 / 오디오 / 비디오 / 글 & 홈 창작 < 생산 - 클라우드 - 소비 > 전체 사이클의 기술을 연구 개발하는 플랫폼 그룹입니다.</p>
+                                                <p>포토 / 오디오 / 비디오 / 글 & 홈 창작 < 생산 - 클라우드 - 소비 > 전체 사이클의 기술을 연구 </p>
+                                               
+                                                <img class="game-image"  src="../sikbbang.png" alt=""/>
+
+                                            </div >
+                                            <div class="game-image-box bg-black">
+                                                <h4 class="game__title">도로의 무법자<br>분노의 질주</h4>
+                                                <p>포토 / 오디오 / 비디오 / 글 & 홈 창작 < 생산 - 클라우드 - 소비 > 전체 사이클의 기술을 연구 개발하는 플랫폼 그룹입니다.</p>
+                                                <p>포토 / 오디오 / 비디오 / 글 & 홈 창작 < 생산 - 클라우드 - 소비 > 전체 사이클의 기술을 연구 </p>
+                                               
+                                                <img class="game-image"  src="../road.png" alt=""/>
+
+                                            </div>
+                                            <div class="game-image-box bg-green">
+                                                <h4 class="game__title">심리의<br>분석으로</h4>
+                                                <p>포토 / 오디오 / 비디오 / 글 & 홈 창작 < 생산 - 클라우드 - 소비 > 전체 사이클의 기술을 연구 개발하는 플랫폼 그룹입니다.</p>
+                                                <p>포토 / 오디오 / 비디오 / 글 & 홈 창작 < 생산 - 클라우드 - 소비 > 전체 사이클의 기술을 연구 </p>
+                                               
+                                                <img class="game-image"  src="../simri.png" alt=""/>
+
+                                            </div>
+                                            <div class="game-image-box bg-yellow">
+                                                <h4 class="game__title">탁구왕<br>김재빵</h4>
+                                                <p>포토 / 오디오 / 비디오 / 글 & 홈 창작 < 생산 - 클라우드 - 소비 > 전체 사이클의 기술을 연구 개발하는 플랫폼 그룹입니다.</p>
+                                                <p>포토 / 오디오 / 비디오 / 글 & 홈 창작 < 생산 - 클라우드 - 소비 > 전체 사이클의 기술을 연구 </p>
+                                               
+                                                <img class="game-image"  src="../takku.png" alt=""/>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    
+                    <div class="swiper-pagination"></div>
+                
+                </div>
+            </section>
+
+            <section class="home container" id="home container">
+                <div class="message">
+                <p class="message_">방명록을 남겨주세요.</p>
+                 <form id="main_form" method="POST">
+                    <textarea id ="content" name="content" placeholder="응원의 글 200자를 보내주세요!"></textarea>
+                <button class="bg-orange" id="message_button" onclick="alert('감사합니다❤️')">보내기</button>
+                </form>
+                </div>
+            </section>
+        </main>
+</body>
+</html>
